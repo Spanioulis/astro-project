@@ -1,9 +1,15 @@
 ---
+import HeaderButton from './HeaderButton.astro';
 
 ---
 
 <header class="py-8 px-4 mx-auto lg:py-16 lg:px-6">
     <div class="mx-auto text-center">
-        <h1 class="text-5xl text-slate-100">Astro App 💣</h1>
+        <h1 class="text-5xl text-slate-100">Astro App 👨‍🚀</h1>
     </div>
+
+    <nav class="py-8 px-4 flex flex-col items-center justify-around w-full text-center md:flex-row">
+        <HeaderButton href="/about" class="text-gray-200">About</HeaderButton>
+        <HeaderButton href="/oldest" class="text-gray-200">Los más viejos</HeaderButton>
+    </nav>
 </header>
